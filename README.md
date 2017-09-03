@@ -1,7 +1,8 @@
 # EEC_gameTicTacToe
-***
+
 ## Free Code Camp Practical Task "Tic Tac Toe Game"
 
+***
 How I see my app:
 1. Quad 3x3
 2. Adition space with selection of difficulty/score/tweet your score/select players or computer
@@ -11,7 +12,7 @@ How I see my app:
 
 Features like to add:
 1. Some animation\svg
-2. Use as much bugs as possible, otherwise it feature.
+2. Avoid bugs as much as possible.
 
 
 How to use:
