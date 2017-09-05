@@ -14,7 +14,6 @@ Features like to add:
 1. Some animation\svg
 2. Avoid bugs as much as possible.
 
-
 How to use:
   * Download as ZIP, unpack, run EEC_gameTicTacToe.html
 
