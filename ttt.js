@@ -31,6 +31,7 @@ $(document).ready(function(){
 	$("span").click(function(){
 		
 		if(queueActions%2==0){
+			totalTurns++
 			if(this.classList==""&&boolGameRunning==true){
 			$(this).addClass("circle");
 			totalTurns++;
@@ -49,6 +50,7 @@ $(document).ready(function(){
 		}else{
 			if(gameplayMode==0){
 				if(this.classList==""&&boolGameRunning==true){
+				totalTurns++;
 				$(this).addClass("cross");
 				totalTurns++;
 				globalPlayer2.push($("span").index(this));
@@ -106,7 +108,10 @@ tArr=player;
 	  }
 	  
   }
-  
+  if(totalTurns>=18&&boolGameRunning==true){
+	alert("Tile, no winner!!!");  
+  }
+  console.log(totalTurns+"totalTurns0000000000000000000000000000");
 }
 
 function compareArrayQuick(userArr,dataArr,playerSign){
@@ -164,11 +169,11 @@ function smartComputer(){
 	if($("span:eq("+magikX+")").hasClass("circle")==true||$("span:eq("+magikX+")").hasClass("cross")==true){
 	smartComputer();
 	}else{
+	totalTurns++;
 	//console.log(magikX+"computer thinking");
 	globalPlayer2.push(magikX);
 	$("span:eq("+magikX+")").addClass("cross");
 	queueActions++;
 	checkWinner(globalPlayer2,"Cross");
-	totalTurns++;
 	}
 }
